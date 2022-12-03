@@ -1,0 +1,6 @@
+#!/bin/sh
+
+v=`cat version`
+
+docker push ghcr.io/crazee/pepperfox:$v
+docker push ghcr.io/crazee/pepperfox:latest

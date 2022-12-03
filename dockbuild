@@ -1,0 +1,8 @@
+#!/bin/sh
+
+v=`cat version`
+
+docker build -t fox docker
+
+docker tag fox ghcr.io/crazee/pepperfox:$v
+docker tag fox ghcr.io/crazee/pepperfox:latest
