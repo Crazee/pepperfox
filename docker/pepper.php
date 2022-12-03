@@ -128,7 +128,7 @@ XXX;
         
         $amt = $t->amount;
         $fid = $t->id;
-        $name = substr(strtr(htmlspecialchars($t->description, ENT_XML), "\r\n", "::"), 0, 32);
+        $name = substr(strtr(htmlspecialchars($t->description, ENT_XML1), "\r\n", "::"), 0, 32);
         $memo = htmlspecialchars($t->category->name, ENT_XML1);
         
         $type = ($amt > 0) ? "CREDIT" : "DEBIT";
