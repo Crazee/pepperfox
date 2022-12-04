@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>README</title>
+	</head>
+	<body>
+		<div id="readme"></div>
+		<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+		<script src="https://raw.githubusercontent.com/crazee/jquery-gh-readme/dist/jquery.gh-readme.min.js"></script>
+		<script>
+			$(function () {
+				var options = {
+					owner: 'crazee',
+					repo: 'pepperfox'
+				};
+				$('#readme').readme(options);
+			});
+		</script>
+	</body>
+</html>
