@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <title>Pepperfox Overview</title>
-</head>
-<body>
-<h2>Overview</h2>
-<p>
-The idea is to coax transaction data from reluctant financial institutions and convert them to the OFX standard for importing into Personal Finance software.
-</p>
-<h3>Methodology</h3>
-<p>
-First you'll need to hook up the institutions you can't access directly to M.
-</p>  
-</body>
+	<head>
+		<title>README</title>
+	</head>
+	<body>
+		<div id="readme"></div>
+		<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/gh/crazee/jquery-gh-readme/dist/jquery.gh-readme.min.js"></script>
+		<script>
+			$(function () {
+				var options = {
+					owner: 'crazee',
+					repo: 'pepperfox'
+				};
+				$('#readme').readme(options);
+			});
+		</script>
+	</body>
 </html>
