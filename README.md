@@ -17,7 +17,7 @@ Well to get back to the heyday of adherence to Standards you can combine a few t
 * This technology, *pepperfox* which can convert those `.json` files into `.ofx` files,
 * And *PocketSense* which will feed them into Microsoft Money.
 
-These are easy to install on a Linux without being `root`.  The *mintapi* and *pepperfox* components are implemented as [Docker](https://www.docker.com/) images so you don't need to worry about conflicts between versions of, say, *python* needed by *mintapi* and whatever you otherwise need on your Linux.  You do need to have *docker* installed and fixed so can run it without being root.
+These are easy to install on a Linux without being `root`.  The *mintapi* and *pepperfox* components are implemented as [Docker](https://www.docker.com/) images so you don't need to worry about conflicts between versions of, say, *python* needed by *mintapi* and whatever you otherwise need on your Linux.  You do need to have *docker* installed and fixed so you can run it without being root.
 
 ## Installation
 
@@ -45,6 +45,6 @@ Whenever you want to get recent transaction data (last 3 months) just do:
 $HOME/pepperfox/bin/run
 ```
 
-and then move the files in the `$HOME/pepperfox/ofx` directory to the `.../pocketsense/import/` directory for *PocketSense* to process.  Voila!
+and then move the files in the `$HOME/pepperfox/ofx` directory to your `.../pocketsense/import/` directory for *PocketSense* to process.  Voila!
 
 For now, *pepperfox* Version 1.0 only handles credit card transactions.
