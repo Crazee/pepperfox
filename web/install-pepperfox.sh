@@ -60,13 +60,13 @@ filename=/fox/mint/data
 cat >bin/run <<!
 #!/bin/sh
 
-user=`id -u`:`id -g`
+user=\`id -u\`:\`id -g\`
 
 rm -f $PF/mint/* $PF/ofx/*
 
 docker run --rm --mount type=bind,source=$PF,destination=/fox --shm-size=2g ghcr.io/mintapi/mintapi mintapi $1 $2 --config-file /fox/config 
 
-docker run --user $user --rm --mount type=bind,source=$PF,destination=/fox --shm-size=2g ghcr.io/crazee/pepperfox
+docker run --user \$user --rm --mount type=bind,source=$PF,destination=/fox --shm-size=2g ghcr.io/crazee/pepperfox
 
 !
 
