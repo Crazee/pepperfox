@@ -47,4 +47,4 @@ $HOME/pepperfox/bin/run
 
 and then move the files in the `$HOME/pepperfox/ofx` directory to your `.../pocketsense/import/` directory for *PocketSense* to process.  Voila!
 
-For now, *pepperfox* Version 1.0 only handles credit card transactions.
+For now, *pepperfox* Version 1.0 only handles credit card transactions.  Version 2.0 will also handle checking and savings accounts.
