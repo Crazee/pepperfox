@@ -1,7 +1,7 @@
 #!/bin/sh
 
 PF=$HOME/pepperfox
-VER=1.0
+VER=2.0
 
 if [ -e $PF ]
 then
