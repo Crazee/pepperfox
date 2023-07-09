@@ -21,6 +21,7 @@ foreach($accounts as $a){
             switch($a->bankAccountType){
                 case "CHECKING":
                 case "SAVINGS":
+                case "MONEY_MARKET":
                     banking($a);
             }
     }
@@ -52,7 +53,7 @@ banking($a){
     
     $acct = $a->cpAccountNumberLast4;
     $balance = $a->currentBalance;
-    $available = $a->availableBalance;
+    $available = isset($a->availableBalance) ? $a->availableBalance : $a->currentBalance;     // well...
     $acctname = $a->name;
     $accttype = $a->bankAccountType;
     
